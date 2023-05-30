@@ -1,0 +1,136 @@
+*{
+  color: #c2c9d6;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  background: #0e121a;
+}
+
+.indicator-dot-g{
+  position: relative;
+  margin-top: 28px;
+  margin-left: 12px;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+}
+.indicator-dot-r{
+  position: relative;
+  margin-top: 28px;
+  margin-left: 12px;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.btn{
+  background: transparent;
+  border: none;
+  outline: none;
+  display: inline-flex;
+  height: 50px;
+  padding: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.btn span{
+  display: inline-flex;
+  align-items: center;
+  padding: 0 4px;
+  height: 100%;
+}
+
+.btn img{
+  width: 30px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.npub{
+  font-size: 1.5rem;
+  outline: 0.1rem ;
+  padding: 0.5rem 1rem;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.npub:hover{
+  color: #9b61ff;
+}
+
+.feed{
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: auto;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+.feed:hover{
+  color: #9b61ff;
+}
+
+.feed-content{
+  padding: 0 30px;
+}
+
+.feed-content p{
+  color:white;
+  --max-len: 10;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--max-len);
+  border: 1px solid transparent; /* Borde sólido transparente para reservar espacio */
+  border-image: linear-gradient(to right,rgb(255, 0, 204), white,#9b61ff); /* Gradiente de color para el borde */
+  border-image-slice: 1; /* Indicar que el gradiente cubra todo el borde */
+  
+}
+
+.container{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+}
+
+
+.publish{
+  margin-bottom: 20px;
+}
+
+.input{
+  padding: 10px;
+  width: 500px;
+  height: 180px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(155, 97, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.btnPost{
+  background: #9b61ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+  justify-content: center;
+}
